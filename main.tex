@@ -1,0 +1,27 @@
+
+\documentclass[twoside, hidelinks]{article}
+
+\input{./texfiles/preamble.tex}
+\input{./texfiles/title.tex}
+
+\begin{document}
+
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+\input{./sections/000-Resumo.tex}
+
+\begin{multicols*}{2} % Two-column layout throughout the main article text
+\newpage
+
+\input{./sections/010-Introduction.tex}
+\input{./sections/020-ExploratoryApproach.tex}
+\input{./sections/030-Simulation.tex}
+\input{./sections/040-StatisticalAnalysis.tex}
+\input{./sections/050-ThreatsToValidity.tex}
+\input{./sections/060-Conclusion.tex}
+
+\printbibliography
+
+\end{multicols*}
+\end{document}
