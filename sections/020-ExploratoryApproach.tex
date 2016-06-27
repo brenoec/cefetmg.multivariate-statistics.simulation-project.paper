@@ -30,7 +30,8 @@ $\underset{n}{G_m}$ --- pode ser obitido por:
 \end{center}
 
 onde $\mathcal{M}$ é chamada função mapeadora, composta por um processo de
-seleção, classificação e descrição.
+seleção, classificação e descrição. As figuras \ref{Figure021-Recursion} e \ref{Figure021-IndirectRecursion}
+exemplificam as diferenças entre os grafos $G_e$ e $G_m$.
 
 Seja $C$ um conjunto que contém $k$ classificações tal que:
 
@@ -71,12 +72,39 @@ o processo de se mapear um grafo exploratótio $G_e$ é dado por:
      $\mathcal{M}({G_e}) = \mathcal{D}(\mathcal{C}(\mathcal{S}({G_e}))) = {G_m}$.
 \end{center}
 
+{
+  \centering
+  \captionsetup{type=figure}
+	\includegraphics[scale=0.5]{./figures/Figure021-Recursion.png}
+  \captionof{figure}{
+    exemplo de grafo exploratório (esquerda) e grafo mapa (direita) para
+    recursão simples. Cada chamada a um algoritmo recursivo é representada por
+    um vértice diferente no grafo exploratório, enquanto que chamadas recursivas
+    são representadas por laços no grafo mapa.
+    \hfill \break}
+	\label{Figure021-Recursion}
+}
+
+{
+  \centering
+  \captionsetup{type=figure}
+	\includegraphics[width=\columnwidth]{./figures/Figure022-IndirectRecursion.png}
+  \captionof{figure}{
+    exemplo de grafo exploratório (esquerda) e grafo mapa (direita) para
+    recursão indireta. Cada chamada para trechos 1 e 2 de um algoritmo recursivo
+    indireto são representadas por vértices diferentes, enquanto que o grafo
+    mapa ilustra a relação de recursividade indireta entre tais trechos de forma
+    concisa.
+    \hfill \break}
+	\label{Figure021-IndirectRecursion}
+}
+
 Os grafos $G_e$ e $G_m$ podem ser vistos como duas redes complexas distintas.
 São dois modelos distintos de um mesmo software. Se aplicarmos diferentes
 seleções no grafo exploratório, os grafos mapa resultantes correponderão a
 diferentes escalas de análise do sistema de software sob estudo.
 
-Os modelos elaborados são verdadeiras plataformas de trabalho, pois possibilitam
+Os modelos elaborados apresentam potencial de trabalho, pois possibilitam
 aplicar análises estatísticas, engenharia de software baseada em busca e
 otimização, análise de produto, análise de qualidade e muitos outros.
 Disponibilizam ainda métodos de percepção, onde os próprios modelos figuram
